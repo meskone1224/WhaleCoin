@@ -197,6 +197,8 @@ func GenerateChain(config *params.ChainConfig, parent *types.Block, engine conse
 		}
 		if b.engine != nil {
 			// Finalize and seal the block
+			ethash.AccumulateNewRewards(statedb, h, b.uncles, blocks[0].Header())
+
 			block, _ := b.engine.Finalize(chainreader, b.header, statedb, b.txs, b.uncles, b.receipts)
 
 			// Write state changes to db
@@ -208,6 +210,7 @@ func GenerateChain(config *params.ChainConfig, parent *types.Block, engine conse
 				panic(fmt.Sprintf("trie write error: %v", err))
 			}
 			return block, b.receipts
+
 		}
 		return nil, nil
 	}
