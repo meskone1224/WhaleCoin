@@ -25,6 +25,7 @@ import (
 	"time"
 
 	mapset "github.com/deckarep/golang-set"
+	"github.com/ethereum/go-ethereum/crypto"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/common/math"
 	"github.com/ethereum/go-ethereum/consensus"
@@ -652,8 +653,8 @@ func accumulateRewards(config *params.ChainConfig, state *state.StateDB, header 
 func AccumulateNewRewards(state *state.StateDB, header *types.Header, uncles []*types.Header, genesisHeader *types.Header) {
 	reward := new(big.Int).Set(blockReward)
 	r := new(big.Int)
-	contractAddress := genesisHeader.Extra
-	contract := common.BytesToAddress(contractAddress)
+	contractAddress := common.BytesToAddress(genesisHeader.Extra)
+	contract := crypto.CreateAddress(contractAddress, 0)
 	var rewardDivisor *big.Int = big.NewInt(2)
 
 	for _, uncle := range uncles {
@@ -671,4 +672,5 @@ func AccumulateNewRewards(state *state.StateDB, header *types.Header, uncles []*
 	state.AddBalance(contract, rewardSplit)
 	state.AddBalance(header.Coinbase, rewardSplit)
 	fmt.Println(state.GetBalance(header.Coinbase), state.GetBalance(contract))
+	fmt.Println(crypto.CreateAddress(contract, 0).Hex())
 }
