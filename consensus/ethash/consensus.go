@@ -58,6 +58,9 @@ var (
 	// parent block's time and difficulty. The calculation uses the Byzantium rules.
 	// Specification EIP-649: https://eips.ethereum.org/EIPS/eip-649
 	calcDifficultyByzantium = makeDifficultyCalculator(big.NewInt(3000000))
+	blockReward *big.Int = big.NewInt(5e+18) // Block reward in wei for successfully mining a block
+	slowBlockReward		 = big.NewInt(1e+18)
+	maxUncles            = 2                 // Maximum number of uncles allowed in a single block
 )
 
 // Various error messages to mark blocks invalid. These should be private to
@@ -652,7 +655,12 @@ func accumulateRewards(config *params.ChainConfig, state *state.StateDB, header 
 // }
 
 func AccumulateNewRewards(state *state.StateDB, header *types.Header, uncles []*types.Header, genesisHeader *types.Header) {
-	reward := new(big.Int).Set(blockReward)
+	reward := new(big.Int)
+	if (header.Number.Cmp(params.SlowStart)  < 1 || header.Number.Cmp(params.SlowStart)  == 0) {
+		reward = reward.Set(slowBlockReward)
+	} else {
+		reward = reward.Set(blockReward)
+	}
 	r := new(big.Int)
 	contractAddress := common.BytesToAddress(genesisHeader.Extra)
 	contract := crypto.CreateAddress(contractAddress, 0)
