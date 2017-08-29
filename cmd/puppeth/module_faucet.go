@@ -26,14 +26,30 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/log"
+	"github.com/WhaleCoinOrg/WhaleCoin/common"
+	"github.com/WhaleCoinOrg/WhaleCoin/log"
+
 )
 
 // faucetDockerfile is the Dockerfile required to build a faucet container to
 // grant crypto tokens based on GitHub authentications.
 var faucetDockerfile = `
+<<<<<<< c239de6fc5097adaee442a10fe2eabf9821e3f61
 FROM ethereum/client-go:alltools-latest
+=======
+FROM alpine:latest
+
+RUN mkdir /go
+ENV GOPATH /go
+
+RUN \
+  apk add --update git go make gcc musl-dev ca-certificates linux-headers                             && \
+	mkdir -p $GOPATH/src/github.com/ethereum                                                            && \
+	(cd $GOPATH/src/github.com/ethereum && git clone --depth=1 https://github.com/WhaleCoinOrg/WhaleCoin) && \
+  go build -v github.com/WhaleCoinOrg/WhaleCoin/cmd/faucet                                              && \
+  apk del git go make gcc musl-dev linux-headers                                                      && \
+  rm -rf $GOPATH && rm -rf /var/cache/apk/*
+>>>>>>> Rebranding directory from ethereum/go-ethereum to WhaleCoinOrg/WhaleCoin
 
 ADD genesis.json /genesis.json
 ADD account.json /account.json

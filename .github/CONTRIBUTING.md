@@ -31,6 +31,7 @@ Before you submit a feature request, please check and make sure that it isn't
 possible through some other means. The JavaScript-enabled console is a powerful 
 feature in the right hands. Please check our 
 [Wiki page](https://github.com/ethereum/go-ethereum/wiki) for more info
+
 and help.
 
 ## Configuration, dependencies, and tests
@@ -38,3 +39,4 @@ and help.
 Please see the [Developers' Guide](https://github.com/ethereum/go-ethereum/wiki/Developers'-Guide)
 for more details on configuring your environment, managing project dependencies
 and testing procedures.
+

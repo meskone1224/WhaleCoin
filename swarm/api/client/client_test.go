@@ -25,14 +25,15 @@ import (
 	"sort"
 	"testing"
 
-	"github.com/ethereum/go-ethereum/swarm/storage/feed/lookup"
+	"github.com/WhaleCoinOrg/WhaleCoin/swarm/storage/feed/lookup"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/swarm/api"
-	swarmhttp "github.com/ethereum/go-ethereum/swarm/api/http"
-	"github.com/ethereum/go-ethereum/swarm/multihash"
-	"github.com/ethereum/go-ethereum/swarm/storage/feed"
+	"github.com/WhaleCoinOrg/WhaleCoin/common"
+	"github.com/WhaleCoinOrg/WhaleCoin/crypto"
+	"github.com/WhaleCoinOrg/WhaleCoin/swarm/api"
+	swarmhttp "github.com/WhaleCoinOrg/WhaleCoin/swarm/api/http"
+	"github.com/WhaleCoinOrg/WhaleCoin/swarm/multihash"
+	"github.com/WhaleCoinOrg/WhaleCoin/swarm/storage/feed"
+
 )
 
 func serverFunc(api *api.API) swarmhttp.TestServer {

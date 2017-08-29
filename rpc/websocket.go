@@ -30,8 +30,8 @@ import (
 	"strings"
 	"time"
 
-	mapset "github.com/deckarep/golang-set"
-	"github.com/ethereum/go-ethereum/log"
+	mapset "github.com/deckarep/golang-set"\
+	"github.com/WhaleCoinOrg/WhaleCoin/log"
 	"golang.org/x/net/websocket"
 )
 

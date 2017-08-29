@@ -6,12 +6,19 @@ package contract
 import (
 	"strings"
 
+<<<<<<< c239de6fc5097adaee442a10fe2eabf9821e3f61
 	ethereum "github.com/ethereum/go-ethereum"
 	"github.com/ethereum/go-ethereum/accounts/abi"
 	"github.com/ethereum/go-ethereum/accounts/abi/bind"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/core/types"
 	"github.com/ethereum/go-ethereum/event"
+=======
+	"github.com/WhaleCoinOrg/WhaleCoin/accounts/abi"
+	"github.com/WhaleCoinOrg/WhaleCoin/accounts/abi/bind"
+	"github.com/WhaleCoinOrg/WhaleCoin/common"
+	"github.com/WhaleCoinOrg/WhaleCoin/core/types"
+>>>>>>> Rebranding directory from ethereum/go-ethereum to WhaleCoinOrg/WhaleCoin
 )
 
 // ENSABI is the input ABI used to generate the binding from.

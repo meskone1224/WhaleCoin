@@ -34,8 +34,9 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/ethereum/go-ethereum/swarm/api"
-	"github.com/ethereum/go-ethereum/swarm/storage/feed"
+	"github.com/WhaleCoinOrg/WhaleCoin/swarm/api"
+	"github.com/WhaleCoinOrg/WhaleCoin/swarm/storage/feed"
+
 )
 
 var (

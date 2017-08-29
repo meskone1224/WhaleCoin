@@ -26,8 +26,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common/mclock"
-	"github.com/ethereum/go-ethereum/light"
+	"github.com/WhaleCoinOrg/WhaleCoin/common/mclock"
+	"github.com/WhaleCoinOrg/WhaleCoin/light"
+
 )
 
 var (

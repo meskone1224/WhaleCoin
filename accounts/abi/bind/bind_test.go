@@ -26,7 +26,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/ethereum/go-ethereum/common"
+	"github.com/WhaleCoinOrg/WhaleCoin/common"
 )
 
 var bindTests = []struct {

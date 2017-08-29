@@ -25,8 +25,8 @@ import (
 	"sync"
 	"time"
 
-	ch "github.com/ethereum/go-ethereum/swarm/chunk"
-	"github.com/ethereum/go-ethereum/swarm/log"
+	ch "github.com/WhaleCoinOrg/WhaleCoin/swarm/chunk"
+	"github.com/WhaleCoinOrg/WhaleCoin/swarm/log"
 )
 
 /*
@@ -69,6 +69,7 @@ var (
 const (
 	ChunkProcessors = 8
 	splitTimeout    = time.Minute * 5
+
 )
 
 const (

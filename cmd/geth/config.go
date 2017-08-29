@@ -27,12 +27,12 @@ import (
 
 	cli "gopkg.in/urfave/cli.v1"
 
-	"github.com/ethereum/go-ethereum/cmd/utils"
-	"github.com/ethereum/go-ethereum/dashboard"
-	"github.com/ethereum/go-ethereum/eth"
-	"github.com/ethereum/go-ethereum/node"
-	"github.com/ethereum/go-ethereum/params"
-	whisper "github.com/ethereum/go-ethereum/whisper/whisperv6"
+	"github.com/WhaleCoinOrg/WhaleCoin/cmd/utils"
+	"github.com/WhaleCoinOrg/WhaleCoin/dashboard"
+	"github.com/WhaleCoinOrg/WhaleCoin/eth"
+	"github.com/WhaleCoinOrg/WhaleCoin/node"
+	"github.com/WhaleCoinOrg/WhaleCoin/params"
+	whisper "github.com/WhaleCoinOrg/WhaleCoin/whisper/whisperv6"
 	"github.com/naoina/toml"
 )
 
