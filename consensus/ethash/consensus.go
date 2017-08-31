@@ -322,7 +322,13 @@ func (ethash *Ethash) CalcDifficulty(chain consensus.ChainReader, time uint64, p
 // the difficulty that a new block should have when created at time
 // given the parent block's time and difficulty.
 func CalcDifficulty(config *params.ChainConfig, time uint64, parent *types.Header) *big.Int {
-	return calcDifficultyWhale(time, parent)
+	next := new(big.Int).Add(parent.Number, common.Big1)
+	switch {
+	case config.IsHomestead(next):
+		return calcDifficultyWhale(time, parent)
+	default:
+		return calcDifficultyWhale(time, parent)
+	}
 }
 
 // Some weird constants to avoid constant memory allocs for them.
@@ -460,9 +466,9 @@ func calcDifficultyWhale(time uint64, parent *types.Header) *big.Int {
 	bigParentTime.Set(parent.Time)
 
 	if bigTime.Sub(bigTime, bigParentTime).Cmp(params.DurationLimit) < 0 {
-		diff.Mul(parent.Difficulty, 1.1)
+		diff.Add(parent.Difficulty, adjust)
 	} else {
-		diff.Mul(parent.Difficulty, -1.1)
+		diff.Sub(parent.Difficulty, adjust)
 	}
 	if diff.Cmp(params.MinimumDifficulty) < 0 {
 		diff.Set(params.MinimumDifficulty)
