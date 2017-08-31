@@ -28,14 +28,14 @@ var MainnetBootnodes = []string{
 // Ropsten test network.
 /*
 {
-  enode: "enode://cd15a411c96b2dceb43a7365247bfb6d0017b3b04f45498804e1b8ea3c27c8b1329cf73a5a87b0fad71bf6cc84ddf59b19213980b71c81181d3400259e372ef5@[::]:30303?discport=0",
+  enode: "enode://cd15a411c96b2dceb43a7365247bfb6d0017b3b04f45498804e1b8ea3c27c8b1329cf73a5a87b0fad71bf6cc84ddf59b19213980b71c81181d3400259e372ef5@[::]:30373?discport=0",
   id: "cd15a411c96b2dceb43a7365247bfb6d0017b3b04f45498804e1b8ea3c27c8b1329cf73a5a87b0fad71bf6cc84ddf59b19213980b71c81181d3400259e372ef5",
   ip: "::",
-  listenAddr: "[::]:30303",
+  listenAddr: "[::]:30373",
   name: "gwhale/v1.6.7-stable-26c696fc/linux-amd64/go1.8.3",
   ports: {
     discovery: 0,
-    listener: 30303
+    listener: 30373
   },
   protocols: {
     eth: {
@@ -49,7 +49,6 @@ var MainnetBootnodes = []string{
 */
 var TestnetBootnodes = []string{
 
-	"enode://7ce558ae86b58988123782fcda7e99deaac9603d3c2db320ff4f1ae6c2a68782ad2c9eb232444db407cf84dbdbd557dfc0bbe4c5ccaaa24f50ed43cbf042a6ca@34.231.48.74:30301",
 }
 
 // RinkebyBootnodes are the enode URLs of the P2P bootstrap nodes running on the
