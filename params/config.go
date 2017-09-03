@@ -25,58 +25,39 @@ import (
 
 // Genesis hashes to enforce below configs on.
 var (
-	MainnetGenesisHash = common.HexToHash("0xd4e56740f876aef8c010b86a40d5f56745a118d0906a34e69aec8c0db1cb8fa3")
-	TestnetGenesisHash = common.HexToHash("0x41941023680923e0fe4d74a34bdac8141f2540e3ae90623718e47d66d1ca4a2d")
-	RinkebyGenesisHash = common.HexToHash("0x6341fd3daf94b748c72ced5a5b26028f2474f5f00d824504e4fa37a75767e177")
+	MainnetGenesisHash = common.HexToHash("0x1af591618608e221082239153520c99a90ae08521c87431e2462cde846654b67") // Mainnet genesis hash to enforce below configs on
+	TestnetGenesisHash = common.HexToHash("0x1af591618608e221082239153520c99a90ae08521c87431e2462cde846654b67") // Testnet genesis hash to enforce below configs on
 )
 
 var (
 	// MainnetChainConfig is the chain parameters to run a node on the main network.
 	MainnetChainConfig = &ChainConfig{
-		ChainID:             big.NewInt(30373),
-		HomesteadBlock:      big.NewInt(1150000),
-		DAOForkBlock:        big.NewInt(1920000),
-		DAOForkSupport:      true,
-		EIP150Block:         big.NewInt(2463000),
-		EIP150Hash:          common.HexToHash("0x2086799aeebeae135c246c65021c82b4e15a2c451340993aacfd2751886514f0"),
-		EIP155Block:         big.NewInt(2675000),
-		EIP158Block:         big.NewInt(2675000),
-		ByzantiumBlock:      big.NewInt(4370000),
-		ConstantinopleBlock: nil,
-		Ethash:              new(EthashConfig),
-	}
+		ChainId:         big.NewInt(30373),
+		HomesteadBlock:  big.NewInt(1150000),
+		DAOForkBlock:    big.NewInt(1920000),
+		DAOForkSupport:  true,
+		EIP150Block:     big.NewInt(2463000),
+		EIP150Hash:      common.HexToHash("0x1af591618608e221082239153520c99a90ae08521c87431e2462cde846654b67"),
+		EIP155Block:     big.NewInt(2675000),
+		EIP158Block:     big.NewInt(2675000),
+		MetropolisBlock: big.NewInt(math.MaxInt64), // Don't enable yet
 
-	// MainnetTrustedCheckpoint contains the light client trusted checkpoint for the main network.
-	MainnetTrustedCheckpoint = &TrustedCheckpoint{
-		Name:         "mainnet",
-		SectionIndex: 203,
-		SectionHead:  common.HexToHash("0xc9e05fc67c6a9815adc8072eb18805b53da53a9a6a273e05541e1b7542cf937a"),
-		CHTRoot:      common.HexToHash("0xb85f42447d59f7c3e6679b9a37ed983593fd52efd6251b883592662e95769d5b"),
-		BloomRoot:    common.HexToHash("0xf93d50cb4c49b403c6fd33cd60896d3b36184275be0a51bae4df5e8844ac624c"),
+		Ethash: new(EthashConfig),
 	}
 
 	// TestnetChainConfig contains the chain parameters to run a node on the Ropsten test network.
 	TestnetChainConfig = &ChainConfig{
-		ChainID:             big.NewInt(3),
-		HomesteadBlock:      big.NewInt(0),
-		DAOForkBlock:        nil,
-		DAOForkSupport:      true,
-		EIP150Block:         big.NewInt(0),
-		EIP150Hash:          common.HexToHash("0x41941023680923e0fe4d74a34bdac8141f2540e3ae90623718e47d66d1ca4a2d"),
-		EIP155Block:         big.NewInt(10),
-		EIP158Block:         big.NewInt(10),
-		ByzantiumBlock:      big.NewInt(1700000),
-		ConstantinopleBlock: big.NewInt(4230000),
-		Ethash:              new(EthashConfig),
-	}
+		ChainId:         big.NewInt(3),
+		HomesteadBlock:  big.NewInt(0),
+		DAOForkBlock:    nil,
+		DAOForkSupport:  true,
+		EIP150Block:     big.NewInt(0),
+		EIP150Hash:      common.HexToHash("0x1af591618608e221082239153520c99a90ae08521c87431e2462cde846654b67"),
+		EIP155Block:     big.NewInt(10),
+		EIP158Block:     big.NewInt(10),
+		MetropolisBlock: big.NewInt(math.MaxInt64), // Don't enable yet
 
-	// TestnetTrustedCheckpoint contains the light client trusted checkpoint for the Ropsten test network.
-	TestnetTrustedCheckpoint = &TrustedCheckpoint{
-		Name:         "testnet",
-		SectionIndex: 134,
-		SectionHead:  common.HexToHash("0x17053ecbe045bebefaa01e7716cc85a4e22647e181416cc1098ccbb73a088931"),
-		CHTRoot:      common.HexToHash("0x4d2b86422e46ed76f0e3f50f06632c409f809c8375e53c8bc0f782bcb93dd49a"),
-		BloomRoot:    common.HexToHash("0xccba62232ee56c2967afc58f136a47ba7dc545ae586e6be666430d94516306c7"),
+		Ethash: new(EthashConfig),
 	}
 
 	// RinkebyChainConfig contains the chain parameters to run a node on the Rinkeby test network.
