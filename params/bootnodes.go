@@ -17,49 +17,26 @@
 package params
 
 // MainnetBootnodes are the enode URLs of the P2P bootstrap nodes running on
-// the main Ethereum network.
+// the mian WhaleCoin network.
 var MainnetBootnodes = []string{
-	// Ethereum Foundation Go Bootnodes
+
   "enode://173d88a03853011bd7505b205f40cc144646bbf843f93682457447c4e19407d9f2389a8657ce5f4eceede4076d4bf329a3630b554a6f353ae8d397b150b8c5e6@34.231.64.228:30371",
 }
 
 // TestnetBootnodes are the enode URLs of the P2P bootstrap nodes running on the
-// Ropsten test network.
-/*
-{
-  enode: "enode://cd15a411c96b2dceb43a7365247bfb6d0017b3b04f45498804e1b8ea3c27c8b1329cf73a5a87b0fad71bf6cc84ddf59b19213980b71c81181d3400259e372ef5@[::]:30373?discport=0",
-  id: "cd15a411c96b2dceb43a7365247bfb6d0017b3b04f45498804e1b8ea3c27c8b1329cf73a5a87b0fad71bf6cc84ddf59b19213980b71c81181d3400259e372ef5",
-  ip: "::",
-  listenAddr: "[::]:30373",
-  name: "gwhale/v1.6.7-stable-26c696fc/linux-amd64/go1.8.3",
-  ports: {
-    discovery: 0,
-    listener: 30373
-  },
-  protocols: {
-    eth: {
-      difficulty: 711726653,
-      genesis: "0xb3756bec461cefd484dea6fbb115fc2db0cd1c06fae53c39cfc0bff9f3f40bf7",
-      head: "0x1ecb7960ebb203981ba38331078e14e2a642626b9e0b81622be918f363328086",
-      network: 1211
-    }
-  }
-}
-*/
+// WhaleCoin test network.
+
 var TestnetBootnodes = []string{
 
 	"enode://4f0f14c68ae3dc1e9e883ff6f6746871f56446356569e927dfbd039f5a09f5dc76fe1b1c84e239a618f338c3013c9db0400d80a32c216df22664aacdfc6a0666@34.231.48.74:30371",
 	"enode://e6a4a7b8e6f0adf290af9c7a979c3bd332bf638e57a4b3d2a641cbafd4717f8e442e65ffac711e6ae5e84eae3161dc824fd407685ab21aa2a7957eb1f98800c8@34.192.101.147:30373",
 }
 
-// RinkebyBootnodes are the enode URLs of the P2P bootstrap nodes running on the
-// Rinkeby test network.
-var RinkebyBootnodes = []string{
 
-}
 
 // DiscoveryV5Bootnodes are the enode URLs of the P2P bootstrap nodes for the
 // experimental RLPx v5 topic-discovery network.
 var DiscoveryV5Bootnodes = []string{
 
 }
+
