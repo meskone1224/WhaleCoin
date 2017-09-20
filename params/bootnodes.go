@@ -24,13 +24,13 @@ var MainnetBootnodes = []string{
   "enode://197598fb2872bf03aef8eceba4c39b04bea9638ffc62209cc92bcb5e8545bd4bf842665b29a14b92c2cf58b500f9dcb31d4e312d4a2570118f17fb4302717f58@34.197.224.180:30373",
   "enode://c584fc5843efad1e2339977807ba7c0c77b8dcf2b4a954a50dd36920bb4c464ff91cfbe016537d87a79aacbb12cd74ebc594091dbdd92007590334c0f3e88d25@213.32.53.181:30371",
   "enode://a2deaff121392e2286c59e52325b8b682fd7b09991df9fd91146a20d1b52d1eaaf6c9bbdaffded2083177a62fb026c2f9f71348018c279cc7be75f02a05296e1@138.68.29.211:30371",
+  "enode://478e38162c79e218901b6ac530275c86a59f54adea1fbb36056e9d0896e2a85de27433bd8d7c031c3803daeadab1eeb6f943294d7cb0566c6e7aa2366440623b@34.235.197.115:30371",
 }
 
 // TestnetBootnodes are the enode URLs of the P2P bootstrap nodes running on the
 // WhaleCoin test network.
 
 var TestnetBootnodes = []string{
-
 
 }
 
