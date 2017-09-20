@@ -13,6 +13,7 @@ Automated builds are available for stable releases and the unstable master branc
 
 ## Installation On Remote Server (Ubuntu 16.04)
 
+```
 sudo apt-get update
 sudo apt-get -y upgrade
 sudo curl -O https://storage.googleapis.com/golang/go1.8.3.linux-amd64.tar.gz
@@ -27,6 +28,7 @@ cd WhaleCoin
 make gwhale
 ./build/bin/gwhale account new
 ./build/bin/gwhale
+```
 
 ## Wallets
 
