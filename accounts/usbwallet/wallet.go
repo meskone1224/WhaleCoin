@@ -25,7 +25,7 @@ import (
 	"sync"
 	"time"
 
-	ethereum "github.com/ethereum/go-ethereum"
+	ethereum "github.com/WhaleCoinOrg/WhaleCoin"
 	"github.com/WhaleCoinOrg/WhaleCoin/accounts"
 	"github.com/WhaleCoinOrg/WhaleCoin/common"
 	"github.com/WhaleCoinOrg/WhaleCoin/core/types"

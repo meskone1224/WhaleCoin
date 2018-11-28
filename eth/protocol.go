@@ -21,17 +21,12 @@ import (
 	"io"
 	"math/big"
 
-<<<<<<< c239de6fc5097adaee442a10fe2eabf9821e3f61
 	"github.com/WhaleCoinOrg/WhaleCoin/common"
 	"github.com/WhaleCoinOrg/WhaleCoin/core"
 	"github.com/WhaleCoinOrg/WhaleCoin/core/types"
 	"github.com/WhaleCoinOrg/WhaleCoin/event"
 	"github.com/WhaleCoinOrg/WhaleCoin/rlp"
-=======
-	"github.com/WhaleCoinOrg/WhaleCoin/common"
-	"github.com/WhaleCoinOrg/WhaleCoin/core/types"
-	"github.com/WhaleCoinOrg/WhaleCoin/rlp"
->>>>>>> Rebranding directory from ethereum/go-ethereum to WhaleCoinOrg/WhaleCoin
+
 )
 
 // Constants to match up protocol versions and messages

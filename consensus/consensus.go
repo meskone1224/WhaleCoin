@@ -18,7 +18,6 @@
 package consensus
 
 import (
-<<<<<<< c239de6fc5097adaee442a10fe2eabf9821e3f61
 	"math/big"
 
 	"github.com/WhaleCoinOrg/WhaleCoin/common"
@@ -26,13 +25,7 @@ import (
 	"github.com/WhaleCoinOrg/WhaleCoin/core/types"
 	"github.com/WhaleCoinOrg/WhaleCoin/params"
 	"github.com/WhaleCoinOrg/WhaleCoin/rpc"
-=======
-	"github.com/WhaleCoinOrg/WhaleCoin/common"
-	"github.com/WhaleCoinOrg/WhaleCoin/core/state"
-	"github.com/WhaleCoinOrg/WhaleCoin/core/types"
-	"github.com/WhaleCoinOrg/WhaleCoin/params"
-	"github.com/WhaleCoinOrg/WhaleCoin/rpc"
->>>>>>> Rebranding directory from ethereum/go-ethereum to WhaleCoinOrg/WhaleCoin
+
 )
 
 // ChainReader defines a small collection of methods needed to access the local

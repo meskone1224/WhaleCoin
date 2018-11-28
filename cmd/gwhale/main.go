@@ -27,7 +27,6 @@ import (
 	"strings"
 	"time"
 
-<<<<<<< c239de6fc5097adaee442a10fe2eabf9821e3f61
 	"github.com/elastic/gosigar"
 	"github.com/WhaleCoinOrg/WhaleCoin/accounts"
 	"github.com/WhaleCoinOrg/WhaleCoin/accounts/keystore"

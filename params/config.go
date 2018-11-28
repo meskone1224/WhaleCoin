@@ -32,7 +32,7 @@ var (
 var (
 	// MainnetChainConfig is the chain parameters to run a node on the main network.
 	MainnetChainConfig = &ChainConfig{
-		ChainId:         big.NewInt(30375),
+		ChainID:         big.NewInt(30375),
 		HomesteadBlock:  big.NewInt(0),
 		DAOForkBlock:    nil,
 		DAOForkSupport:  true,
@@ -40,14 +40,13 @@ var (
 		EIP150Hash:      common.HexToHash(""),
 		EIP155Block:     big.NewInt(0),
 		EIP158Block:     big.NewInt(0),
-		MetropolisBlock: big.NewInt(math.MaxInt64), // Don't enable yet
 
 		Ethash: new(EthashConfig),
 	}
 
 	// TestnetChainConfig custom ID
 	TestnetChainConfig = &ChainConfig{
-		ChainId:         big.NewInt(30374),
+		ChainID:         big.NewInt(30374),
 		HomesteadBlock:  big.NewInt(0),
 		DAOForkBlock:    nil,
 		DAOForkSupport:  true,
@@ -55,7 +54,6 @@ var (
 		EIP150Hash:      common.HexToHash(""),
 		EIP155Block:     big.NewInt(0),
 		EIP158Block:     big.NewInt(0),
-		MetropolisBlock: big.NewInt(math.MaxInt64), // Don't enable yet
 
 		Ethash: new(EthashConfig),
 	}
