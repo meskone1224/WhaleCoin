@@ -29,11 +29,11 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/ethereum/go-ethereum/event"
-	"github.com/ethereum/go-ethereum/p2p"
-	"github.com/ethereum/go-ethereum/p2p/enode"
-	"github.com/ethereum/go-ethereum/p2p/simulations/adapters"
-	"github.com/ethereum/go-ethereum/rpc"
+	"github.com/WhaleCoinOrg/WhaleCoin/event"
+	"github.com/WhaleCoinOrg/WhaleCoin/p2p"
+	"github.com/WhaleCoinOrg/WhaleCoin/p2p/enode"
+	"github.com/WhaleCoinOrg/WhaleCoin/p2p/simulations/adapters"
+	"github.com/WhaleCoinOrg/WhaleCoin/rpc"
 	"github.com/julienschmidt/httprouter"
 	"golang.org/x/net/websocket"
 )

@@ -24,12 +24,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ethereum/go-ethereum/p2p"
-	"github.com/ethereum/go-ethereum/p2p/discover"
-	"github.com/ethereum/go-ethereum/p2p/simulations"
-	"github.com/ethereum/go-ethereum/swarm/log"
-	"github.com/ethereum/go-ethereum/swarm/network/simulation"
-	"github.com/ethereum/go-ethereum/swarm/storage"
+	"github.com/WhaleCoinOrg/WhaleCoin/p2p"
+	"github.com/WhaleCoinOrg/WhaleCoin/p2p/discover"
+	"github.com/WhaleCoinOrg/WhaleCoin/p2p/simulations"
+	"github.com/WhaleCoinOrg/WhaleCoin/swarm/log"
+	"github.com/WhaleCoinOrg/WhaleCoin/swarm/network/simulation"
+	"github.com/WhaleCoinOrg/WhaleCoin/swarm/storage"
 )
 
 /*

@@ -23,9 +23,9 @@ import (
 	"os"
 	"testing"
 
-	"github.com/ethereum/go-ethereum/swarm/api"
-	"github.com/ethereum/go-ethereum/swarm/storage"
-	"github.com/ethereum/go-ethereum/swarm/storage/feed"
+	"github.com/WhaleCoinOrg/WhaleCoin/swarm/api"
+	"github.com/WhaleCoinOrg/WhaleCoin/swarm/storage"
+	"github.com/WhaleCoinOrg/WhaleCoin/swarm/storage/feed"
 )
 
 type TestServer interface {

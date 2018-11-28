@@ -21,10 +21,10 @@ import (
 	"encoding/json"
 	"hash"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/hexutil"
-	"github.com/ethereum/go-ethereum/swarm/storage"
-	"github.com/ethereum/go-ethereum/swarm/storage/feed/lookup"
+	"github.com/WhaleCoinOrg/WhaleCoin/common"
+	"github.com/WhaleCoinOrg/WhaleCoin/common/hexutil"
+	"github.com/WhaleCoinOrg/WhaleCoin/swarm/storage"
+	"github.com/WhaleCoinOrg/WhaleCoin/swarm/storage/feed/lookup"
 )
 
 // Request represents a request to sign or signed feed update message

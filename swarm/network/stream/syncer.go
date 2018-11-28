@@ -21,9 +21,9 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/ethereum/go-ethereum/metrics"
-	"github.com/ethereum/go-ethereum/swarm/log"
-	"github.com/ethereum/go-ethereum/swarm/storage"
+	"github.com/WhaleCoinOrg/WhaleCoin/metrics"
+	"github.com/WhaleCoinOrg/WhaleCoin/swarm/log"
+	"github.com/WhaleCoinOrg/WhaleCoin/swarm/storage"
 )
 
 const (

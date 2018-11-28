@@ -24,8 +24,8 @@ import (
 	"net"
 	"sync"
 
-	"github.com/ethereum/go-ethereum/p2p/enode"
-	"github.com/ethereum/go-ethereum/p2p/enr"
+	"github.com/WhaleCoinOrg/WhaleCoin/p2p/enode"
+	"github.com/WhaleCoinOrg/WhaleCoin/p2p/enr"
 )
 
 var nullNode *enode.Node

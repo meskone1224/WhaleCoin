@@ -24,17 +24,17 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ethereum/go-ethereum/metrics"
-	"github.com/ethereum/go-ethereum/p2p"
-	"github.com/ethereum/go-ethereum/p2p/enode"
-	"github.com/ethereum/go-ethereum/p2p/protocols"
-	"github.com/ethereum/go-ethereum/rpc"
-	"github.com/ethereum/go-ethereum/swarm/log"
-	"github.com/ethereum/go-ethereum/swarm/network"
-	"github.com/ethereum/go-ethereum/swarm/network/stream/intervals"
-	"github.com/ethereum/go-ethereum/swarm/pot"
-	"github.com/ethereum/go-ethereum/swarm/state"
-	"github.com/ethereum/go-ethereum/swarm/storage"
+	"github.com/WhaleCoinOrg/WhaleCoin/metrics"
+	"github.com/WhaleCoinOrg/WhaleCoin/p2p"
+	"github.com/WhaleCoinOrg/WhaleCoin/p2p/enode"
+	"github.com/WhaleCoinOrg/WhaleCoin/p2p/protocols"
+	"github.com/WhaleCoinOrg/WhaleCoin/rpc"
+	"github.com/WhaleCoinOrg/WhaleCoin/swarm/log"
+	"github.com/WhaleCoinOrg/WhaleCoin/swarm/network"
+	"github.com/WhaleCoinOrg/WhaleCoin/swarm/network/stream/intervals"
+	"github.com/WhaleCoinOrg/WhaleCoin/swarm/pot"
+	"github.com/WhaleCoinOrg/WhaleCoin/swarm/state"
+	"github.com/WhaleCoinOrg/WhaleCoin/swarm/storage"
 )
 
 const (

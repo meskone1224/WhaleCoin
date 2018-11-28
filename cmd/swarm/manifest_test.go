@@ -24,9 +24,9 @@ import (
 	"runtime"
 	"testing"
 
-	"github.com/ethereum/go-ethereum/swarm/api"
-	swarm "github.com/ethereum/go-ethereum/swarm/api/client"
-	swarmhttp "github.com/ethereum/go-ethereum/swarm/api/http"
+	"github.com/WhaleCoinOrg/WhaleCoin/swarm/api"
+	swarm "github.com/WhaleCoinOrg/WhaleCoin/swarm/api/client"
+	swarmhttp "github.com/WhaleCoinOrg/WhaleCoin/swarm/api/http"
 )
 
 // TestManifestChange tests manifest add, update and remove

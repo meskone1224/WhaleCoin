@@ -8,11 +8,11 @@ import (
 	"strings"
 
 	ethereum "github.com/ethereum/go-ethereum"
-	"github.com/ethereum/go-ethereum/accounts/abi"
-	"github.com/ethereum/go-ethereum/accounts/abi/bind"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/event"
+	"github.com/WhaleCoinOrg/WhaleCoin/accounts/abi"
+	"github.com/WhaleCoinOrg/WhaleCoin/accounts/abi/bind"
+	"github.com/WhaleCoinOrg/WhaleCoin/common"
+	"github.com/WhaleCoinOrg/WhaleCoin/core/types"
+	"github.com/WhaleCoinOrg/WhaleCoin/event"
 )
 
 // PublicResolverABI is the input ABI used to generate the binding from.

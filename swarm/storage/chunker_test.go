@@ -24,8 +24,8 @@ import (
 	"io"
 	"testing"
 
-	"github.com/ethereum/go-ethereum/crypto/sha3"
-	"github.com/ethereum/go-ethereum/swarm/testutil"
+	"github.com/WhaleCoinOrg/WhaleCoin/crypto/sha3"
+	"github.com/WhaleCoinOrg/WhaleCoin/swarm/testutil"
 )
 
 /*

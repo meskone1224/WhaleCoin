@@ -23,14 +23,14 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ethereum/go-ethereum/node"
-	"github.com/ethereum/go-ethereum/p2p/enode"
-	"github.com/ethereum/go-ethereum/p2p/simulations/adapters"
-	"github.com/ethereum/go-ethereum/swarm/log"
-	"github.com/ethereum/go-ethereum/swarm/network"
-	"github.com/ethereum/go-ethereum/swarm/network/simulation"
-	"github.com/ethereum/go-ethereum/swarm/state"
-	"github.com/ethereum/go-ethereum/swarm/storage"
+	"github.com/WhaleCoinOrg/WhaleCoin/node"
+	"github.com/WhaleCoinOrg/WhaleCoin/p2p/enode"
+	"github.com/WhaleCoinOrg/WhaleCoin/p2p/simulations/adapters"
+	"github.com/WhaleCoinOrg/WhaleCoin/swarm/log"
+	"github.com/WhaleCoinOrg/WhaleCoin/swarm/network"
+	"github.com/WhaleCoinOrg/WhaleCoin/swarm/network/simulation"
+	"github.com/WhaleCoinOrg/WhaleCoin/swarm/state"
+	"github.com/WhaleCoinOrg/WhaleCoin/swarm/storage"
 )
 
 //constants for random file generation

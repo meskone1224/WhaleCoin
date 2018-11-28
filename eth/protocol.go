@@ -22,11 +22,11 @@ import (
 	"math/big"
 
 <<<<<<< c239de6fc5097adaee442a10fe2eabf9821e3f61
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/event"
-	"github.com/ethereum/go-ethereum/rlp"
+	"github.com/WhaleCoinOrg/WhaleCoin/common"
+	"github.com/WhaleCoinOrg/WhaleCoin/core"
+	"github.com/WhaleCoinOrg/WhaleCoin/core/types"
+	"github.com/WhaleCoinOrg/WhaleCoin/event"
+	"github.com/WhaleCoinOrg/WhaleCoin/rlp"
 =======
 	"github.com/WhaleCoinOrg/WhaleCoin/common"
 	"github.com/WhaleCoinOrg/WhaleCoin/core/types"

@@ -32,14 +32,14 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/crypto/ecies"
-	"github.com/ethereum/go-ethereum/crypto/sha3"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/swarm/api"
-	swarm "github.com/ethereum/go-ethereum/swarm/api/client"
-	swarmhttp "github.com/ethereum/go-ethereum/swarm/api/http"
-	"github.com/ethereum/go-ethereum/swarm/testutil"
+	"github.com/WhaleCoinOrg/WhaleCoin/crypto"
+	"github.com/WhaleCoinOrg/WhaleCoin/crypto/ecies"
+	"github.com/WhaleCoinOrg/WhaleCoin/crypto/sha3"
+	"github.com/WhaleCoinOrg/WhaleCoin/log"
+	"github.com/WhaleCoinOrg/WhaleCoin/swarm/api"
+	swarm "github.com/WhaleCoinOrg/WhaleCoin/swarm/api/client"
+	swarmhttp "github.com/WhaleCoinOrg/WhaleCoin/swarm/api/http"
+	"github.com/WhaleCoinOrg/WhaleCoin/swarm/testutil"
 )
 
 const (

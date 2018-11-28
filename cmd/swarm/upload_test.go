@@ -30,10 +30,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ethereum/go-ethereum/log"
-	swarm "github.com/ethereum/go-ethereum/swarm/api/client"
-	swarmhttp "github.com/ethereum/go-ethereum/swarm/api/http"
-	"github.com/ethereum/go-ethereum/swarm/testutil"
+	"github.com/WhaleCoinOrg/WhaleCoin/log"
+	swarm "github.com/WhaleCoinOrg/WhaleCoin/swarm/api/client"
+	swarmhttp "github.com/WhaleCoinOrg/WhaleCoin/swarm/api/http"
+	"github.com/WhaleCoinOrg/WhaleCoin/swarm/testutil"
 	"github.com/mattn/go-colorable"
 )
 

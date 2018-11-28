@@ -22,8 +22,8 @@ import (
 	"io/ioutil"
 	"strings"
 
-	"github.com/ethereum/go-ethereum/accounts/abi"
-	"github.com/ethereum/go-ethereum/common"
+	"github.com/WhaleCoinOrg/WhaleCoin/accounts/abi"
+	"github.com/WhaleCoinOrg/WhaleCoin/common"
 
 	"bytes"
 	"os"

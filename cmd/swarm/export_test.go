@@ -26,8 +26,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/ethereum/go-ethereum/swarm"
-	"github.com/ethereum/go-ethereum/swarm/testutil"
+	"github.com/WhaleCoinOrg/WhaleCoin/swarm"
+	"github.com/WhaleCoinOrg/WhaleCoin/swarm/testutil"
 )
 
 // TestCLISwarmExportImport perform the following test:

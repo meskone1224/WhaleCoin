@@ -26,9 +26,9 @@ import (
 	"time"
 
 <<<<<<< c239de6fc5097adaee442a10fe2eabf9821e3f61
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/crypto"
-	whisper "github.com/ethereum/go-ethereum/whisper/whisperv6"
+	"github.com/WhaleCoinOrg/WhaleCoin/common"
+	"github.com/WhaleCoinOrg/WhaleCoin/crypto"
+	whisper "github.com/WhaleCoinOrg/WhaleCoin/whisper/whisperv6"
 =======
 	"github.com/WhaleCoinOrg/WhaleCoin/common"
 	"github.com/WhaleCoinOrg/WhaleCoin/crypto"

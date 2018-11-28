@@ -23,14 +23,14 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ethereum/go-ethereum/metrics"
-	"github.com/ethereum/go-ethereum/p2p/protocols"
-	"github.com/ethereum/go-ethereum/swarm/log"
-	pq "github.com/ethereum/go-ethereum/swarm/network/priorityqueue"
-	"github.com/ethereum/go-ethereum/swarm/network/stream/intervals"
-	"github.com/ethereum/go-ethereum/swarm/spancontext"
-	"github.com/ethereum/go-ethereum/swarm/state"
-	"github.com/ethereum/go-ethereum/swarm/storage"
+	"github.com/WhaleCoinOrg/WhaleCoin/metrics"
+	"github.com/WhaleCoinOrg/WhaleCoin/p2p/protocols"
+	"github.com/WhaleCoinOrg/WhaleCoin/swarm/log"
+	pq "github.com/WhaleCoinOrg/WhaleCoin/swarm/network/priorityqueue"
+	"github.com/WhaleCoinOrg/WhaleCoin/swarm/network/stream/intervals"
+	"github.com/WhaleCoinOrg/WhaleCoin/swarm/spancontext"
+	"github.com/WhaleCoinOrg/WhaleCoin/swarm/state"
+	"github.com/WhaleCoinOrg/WhaleCoin/swarm/storage"
 	opentracing "github.com/opentracing/opentracing-go"
 )
 

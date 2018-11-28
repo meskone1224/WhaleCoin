@@ -28,10 +28,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
-	ch "github.com/ethereum/go-ethereum/swarm/chunk"
-	"github.com/ethereum/go-ethereum/swarm/log"
-	"github.com/ethereum/go-ethereum/swarm/storage/mock/mem"
+	"github.com/WhaleCoinOrg/WhaleCoin/common"
+	ch "github.com/WhaleCoinOrg/WhaleCoin/swarm/chunk"
+	"github.com/WhaleCoinOrg/WhaleCoin/swarm/log"
+	"github.com/WhaleCoinOrg/WhaleCoin/swarm/storage/mock/mem"
 	ldberrors "github.com/syndtr/goleveldb/leveldb/errors"
 )
 

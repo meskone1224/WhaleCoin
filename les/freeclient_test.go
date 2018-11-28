@@ -24,8 +24,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common/mclock"
-	"github.com/ethereum/go-ethereum/ethdb"
+	"github.com/WhaleCoinOrg/WhaleCoin/common/mclock"
+	"github.com/WhaleCoinOrg/WhaleCoin/ethdb"
 )
 
 func TestFreeClientPoolL10C100(t *testing.T) {

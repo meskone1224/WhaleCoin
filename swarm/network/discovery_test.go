@@ -19,7 +19,7 @@ package network
 import (
 	"testing"
 
-	p2ptest "github.com/ethereum/go-ethereum/p2p/testing"
+	p2ptest "github.com/WhaleCoinOrg/WhaleCoin/p2p/testing"
 )
 
 /***

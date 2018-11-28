@@ -28,11 +28,11 @@
 //  	"context"
 //  	"fmt"
 //  	"os"
-//  	pss "github.com/ethereum/go-ethereum/swarm/pss/client"
-//  	"github.com/ethereum/go-ethereum/p2p/protocols"
-//  	"github.com/ethereum/go-ethereum/p2p"
-//  	"github.com/ethereum/go-ethereum/swarm/pot"
-//  	"github.com/ethereum/go-ethereum/swarm/log"
+//  	pss "github.com/WhaleCoinOrg/WhaleCoin/swarm/pss/client"
+//  	"github.com/WhaleCoinOrg/WhaleCoin/p2p/protocols"
+//  	"github.com/WhaleCoinOrg/WhaleCoin/p2p"
+//  	"github.com/WhaleCoinOrg/WhaleCoin/swarm/pot"
+//  	"github.com/WhaleCoinOrg/WhaleCoin/swarm/log"
 //  )
 //
 //  type FooMsg struct {

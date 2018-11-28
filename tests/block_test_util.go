@@ -26,7 +26,7 @@ import (
 	"github.com/WhaleCoinOrg/WhaleCoin/common"
 	"github.com/WhaleCoinOrg/WhaleCoin/common/hexutil"
 	"github.com/WhaleCoinOrg/WhaleCoin/common/math"
-	"github.com/ethereum/go-ethereum/consensus"
+	"github.com/WhaleCoinOrg/WhaleCoin/consensus"
 	"github.com/WhaleCoinOrg/WhaleCoin/consensus/ethash"
 	"github.com/WhaleCoinOrg/WhaleCoin/core"
 	"github.com/WhaleCoinOrg/WhaleCoin/core/state"
