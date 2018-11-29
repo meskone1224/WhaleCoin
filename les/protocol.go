@@ -25,7 +25,7 @@ import (
 	"math/big"
 
 	"github.com/WhaleCoinOrg/WhaleCoin/common"
-	"github.com/WhaleCoinOrg/WhaleCoin/core/"
+	"github.com/WhaleCoinOrg/WhaleCoin/core"
 	"github.com/WhaleCoinOrg/WhaleCoin/core/rawdb"
 	"github.com/WhaleCoinOrg/WhaleCoin/crypto"
 	"github.com/WhaleCoinOrg/WhaleCoin/p2p/enode"

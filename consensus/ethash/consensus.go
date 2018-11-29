@@ -68,11 +68,8 @@ var (
 	// Specification EIP-649: https://eips.ethereum.org/EIPS/eip-649
 	calcDifficultyByzantium = makeDifficultyCalculator(big.NewInt(3000000))
 	blockReward *big.Int = big.NewInt(5e+18) // Block reward in wei for successfully mining a block
-	slowBlockReward		 = big.NewInt(1e+18)
-	maxUncles            = 2                 // Maximum number of uncles allowed in a single block
     finalBlockReward *big.Int = big.NewInt(5e+18)
     slowBlockReward *big.Int     = big.NewInt(1e+18)
-    maxUncles            = 2                 // Maximum number of uncles allowed in a single block
     SlowStart *big.Int             = big.NewInt(1000)
     rewardBlockDivisor *big.Int    = big.NewInt(100000)
     rewardBlockFlat *big.Int       = big.NewInt(1000000)

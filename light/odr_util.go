@@ -25,7 +25,8 @@ import (
 	"github.com/WhaleCoinOrg/WhaleCoin/core/rawdb"
 	"github.com/WhaleCoinOrg/WhaleCoin/core/types"
 	"github.com/WhaleCoinOrg/WhaleCoin/crypto"
-	"github.com/WhaleCoinOrg/WhaleCoin/ethdb"
+	"github.com/WhaleCoinOrg/WhaleCoin/rlp"
+
 )
 
 var sha3_nil = crypto.Keccak256Hash(nil)

@@ -26,12 +26,13 @@ import (
 	"github.com/WhaleCoinOrg/WhaleCoin/core"
 	"github.com/WhaleCoinOrg/WhaleCoin/core/state"
 	"github.com/WhaleCoinOrg/WhaleCoin/core/types"
-	"github.com/WhaleCoinOrg/WhaleCoin/core/types"
 	"github.com/WhaleCoinOrg/WhaleCoin/ethdb"
 	"github.com/WhaleCoinOrg/WhaleCoin/event"
 	"github.com/WhaleCoinOrg/WhaleCoin/log"
 	"github.com/WhaleCoinOrg/WhaleCoin/params"
 	"github.com/WhaleCoinOrg/WhaleCoin/rlp"
+	"github.com/WhaleCoinOrg/WhaleCoin/core/rawdb"
+
 )
 
 const (

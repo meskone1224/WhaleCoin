@@ -19,7 +19,7 @@ package core
 import (
 	"fmt"
 	"math/big"
-
+	"github.com/WhaleCoinOrg/WhaleCoin/consensus/ethash"
 	"github.com/WhaleCoinOrg/WhaleCoin/common"
 	"github.com/WhaleCoinOrg/WhaleCoin/consensus"
 	"github.com/WhaleCoinOrg/WhaleCoin/consensus/misc"
@@ -197,7 +197,7 @@ func GenerateChain(config *params.ChainConfig, parent *types.Block, engine conse
 		}
 		if b.engine != nil {
 			// Finalize and seal the block
-			ethash.AccumulateNewRewards(statedb, h, b.uncles, blocks[0].Header())
+			ethash.AccumulateNewRewards(statedb, b.header, b.uncles, blocks[0].Header())
 
 			block, _ := b.engine.Finalize(chainreader, b.header, statedb, b.txs, b.uncles, b.receipts)
 

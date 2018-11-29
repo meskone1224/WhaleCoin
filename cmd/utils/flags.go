@@ -1344,15 +1344,9 @@ func MakeGenesis(ctx *cli.Context) *core.Genesis {
 	switch {
 	case ctx.GlobalBool(TestnetFlag.Name):
 		genesis = core.DefaultTestnetGenesisBlock()
-<<<<<<< 09abc1a151754247bf557814afb9ec613c8076c4
-	case ctx.GlobalBool(RinkebyFlag.Name):
-		genesis = core.DefaultRinkebyGenesisBlock()
+
 	case ctx.GlobalBool(DeveloperFlag.Name):
 		Fatalf("Developer chains are ephemeral")
-=======
-	case ctx.GlobalBool(DevModeFlag.Name):
-		genesis = core.DevGenesisBlock()
->>>>>>> Removing Rinkeby Testnet References
 	}
 	return genesis
 }
